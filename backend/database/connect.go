@@ -1,9 +1,11 @@
 package database
 
 import (
+	"fmt"
 	"log"
 	"os"
 
+	"github.com/CrossStack-Q/React_Go_Blog_2024/backend/models"
 	"github.com/joho/godotenv"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -28,4 +30,10 @@ func Connect() {
 	}
 
 	DB = db
+
+	db.AutoMigrate(
+		&models.User{},
+	)
+
+	fmt.Println("Bye")
 }
