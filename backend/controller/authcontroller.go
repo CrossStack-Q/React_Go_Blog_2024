@@ -1,5 +1,7 @@
 package controller
 
-func controller() {
+import "fmt"
 
+func controller() {
+	fmt.Println("controller")
 }
