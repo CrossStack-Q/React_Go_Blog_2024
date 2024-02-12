@@ -1,3 +1,5 @@
 package controller
 
-func controller()
+func controller() {
+
+}
